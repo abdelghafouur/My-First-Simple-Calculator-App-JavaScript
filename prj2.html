@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <td colspan="4">
+                <div id="alfficher">
+
+                </div>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="C" onclick="butuunC()" />
+
+            </td>
+            <td>
+                <input type="button" value="CE" onclick="butuunCE()" />
+
+            </td>
+            <td>
+                <input type="button" value="%" onclick="butuun('%')" />
+
+            </td>
+            <td>
+                <input type="button" value="/" onclick="butuun('/')" />
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="7" onclick="butuun(7)" />
+
+            </td>
+            <td>
+                <input type="button" value="8" onclick="butuun(8)" />
+
+            </td>
+            <td>
+                <input type="button" value="9" onclick="butuun(9)" />
+
+            </td>
+            <td>
+                <input type="button" value="*" onclick="butuun('*')" />
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="4" onclick="butuun(4)" />
+
+            </td>
+            <td>
+                <input type="button" value="5" onclick="butuun(5)" />
+
+            </td>
+            <td>
+                <input type="button" value="6" onclick="butuun(6)" />
+
+            </td>
+            <td>
+                <input type="button" value="-" onclick="butuun('-')" />
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="1" onclick="butuun(1)" />
+
+            </td>
+            <td>
+                <input type="button" value="2" onclick="butuun(2)" />
+
+            </td>
+            <td>
+                <input type="button" value="3" onclick="butuun(3)" />
+
+            </td>
+            <td>
+                <input type="button" value="+" onclick="butuun('+')" />
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="0" onclick="butuun(0)" style="width: 96px;" />
+
+            </td>
+            <td>
+                <input type="button" value="." onclick="butuun('.')" />
+
+            </td>
+            <td>
+                <input type="button" value="=" onclick="function_Egall()" />
+
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        var alfficher = document.getElementById("alfficher")
+        var infos = ""
+        var i = false
+        function butuun(number)
+            {
+                if( i == true)
+                    {
+                        alfficher.innerHTML = ""
+                    }
+                i = false
+                infos += number
+                alfficher.innerHTML += number
+            }
+        function function_Egall()
+            {
+                a = eval(alfficher.innerHTML)
+                alfficher.innerHTML = a
+                i = true
+            }
+        function butuunCE()
+            {
+                alfficher.innerHTML = ""
+            }
+        function butuunC()
+            {
+                alfficher.innerHTML = alfficher.innerHTML.substring(0,alfficher.innerHTML.length-1)
+            }
+    </script>
+</body>
+</html>
