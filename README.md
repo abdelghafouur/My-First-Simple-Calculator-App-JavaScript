@@ -33,8 +33,9 @@ FirstCalc is a user-friendly calculator app built with JavaScript. It is designe
 
 Contributions are welcome! If you'd like to make any improvements or add new features to FirstCalc, feel free to submit a pull request. 🚀
 
-## Contact
+## Contact 📧
 
-For any inquiries or feedback, please email us at abdelghafourlahnida@gmail.com 📧
+For any inquiries or feedback, please reach out to abdelghafourlahnida01@gmail.com.
+
 
 
