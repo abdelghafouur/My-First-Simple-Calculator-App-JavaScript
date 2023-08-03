@@ -36,6 +36,3 @@ Contributions are welcome! If you'd like to make any improvements or add new fea
 ## Contact 📧
 
 For any inquiries or feedback, please reach out to abdelghafourlahnida01@gmail.com.
-
-
-
