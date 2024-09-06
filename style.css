@@ -1,8 +1,93 @@
-input{
-    height: 45px;
-    width: 45px;
+/* Body Styling */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-div{
-    height: 46px;
-    width: 20px;
+
+/* Calculator Table */
+table {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Calculator Display */
+#alfficher {
+    font-size: 2em;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: right;
+    border-radius: 10px 10px 0 0;
+    letter-spacing: 2px;
+}
+
+/* Input Buttons */
+input[type="button"] {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    color: #333;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Special Buttons Styling */
+input[type="button"]:nth-child(4n) {
+    background-color: #f5a623;
+    color: #fff;
+}
+
+/* Button Hover Effects */
+input[type="button"]:hover {
+    background-color: #b9bfc4;
+    color: #000;
+}
+
+/* Number Buttons */
+input[type="button"]:nth-child(odd) {
+    background-color: #d7dbe2;
+}
+
+/* Equal Button */
+input[type="button"][value="="] {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+input[type="button"][value="="]:hover {
+    background-color: #218838;
+}
+
+/* Clear Buttons */
+input[type="button"][value="C"],
+input[type="button"][value="CE"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+input[type="button"][value="C"]:hover,
+input[type="button"][value="CE"]:hover {
+    background-color: #c82333;
+}
+
+/* Styling for Zero Button */
+input[type="button"][value="0"] {
+    width: 125px;
+    border-radius: 0 0 0 10px;
+}
+
+/* Border and Spacing */
+td {
+    padding: 0;
 }
